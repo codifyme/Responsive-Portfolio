@@ -3,43 +3,181 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Angel Cochachez </title>
+    <!----  CSS ----->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!----- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Jquery and popper-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 </head>
 
 <body>
-    <header id="masthead">
-        <div class="container"><a href="index.html" id="logo">Angel Cochachez</a>
-            <nav><a href="index.html">About</a><a href="portfolio.html">Portfolio</a><a href="contact.html">Contact</a>
-            </nav>
+    <header id="home">
+        <nav id="m-nav">
+
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+        <!--</nav><div class="container">
+        <a href="index.html" id="logo">Angel Cochachez</a>
+        <nav><a href="index.html">About</a><a href="portfolio.html">Portfolio</a><a href="contact.html">Contact</a>
+        </nav>
+        </div>-->
+        <div class="row banner">
+            <div class="banner-text">
+                <h1 class="responsive-headline zoonIn">I'm <span> Angel Cochachez</span></h1>
+                <h3 class="won fadeInUp">I'm a passionate <span> UI/UX Designer </span> and <span> Front-End
+                        Developer </span>
+                    creating modern and responsive design for <span> Web </span> and <span> Mobile </span>.<br> Let's
+                    learn
+                    more <a class="smoothscroll" href="#about">about me</a>.</a></h3>
+                <hr />
+            </div>
         </div>
+
+        <!--<p class="scrolldown">
+            <a class="smoothscroll" href="#about"><i class="fa fa-angle-double-down"></i></a>
+        </p>-->
+
+        <div class="header-overlay"></div>
+
+        <!------ Social Developer ----->
+
+        <div id="social">
+            <div class="row social-container">
+                <ul class="social">
+                    <li><a href="https://www.codepen.com/angelos"><i class="fa fa-codepen"></i></a></li>
+                    <li><a href="https://twitter.com/SurRocker"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/angel-cochachez-839820125"><i
+                                class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/codifyme"><i class="fa fa-github"></i></a></li>
+                    <!--<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                         <li><a href="#"><i class="fa fa-skype"></i></a></li>-->
+                </ul>
+            </div>
+
+        </div> <!-- Social End -->
+        <div class="header-overlay"></div>
+        <p class="scrolldown">
+            <a href="#bottom" id="top"></a>
+        </p>
+        <div id="star">&star;</div>
+        <!--<div class="header-overlay"></div>-->
+
+
     </header>
-    <div id="main-container" class="container">
-        <section class="main-section">
-            <h1>About Me</h1><img src="assets/images/angelitope.jpg" class="auth-image" alt="Your Name">
-            <p>When people say 'responsive design'they mean making your website look good on any device be it a
-                phone,
-                tablet,
-                lapyop or desktop. </p>
-            <p>in the past,
-                companies tried to use separate websites for mobile device you may recall having to use sites that
-                had an "m."infront of the URL(m.facebook.com) However,
-                this had adverse effect their SEO. </p>
-            <p>These days,
-                an estimated 70% of a website's traffic comes from mobile devices, and this number is on the
-                rise. in addition,
-                websites that aren't responsive risk losing ground with Google- the company announced that
-                any website that doesnt adapt to mobile screens will lose points in it's search engine ranking.
-            </p>
-        </section>
-    </div>
-    <footer>
-        <div class="container">Angelo's Copyright &copy;
+    <section id="about">
+
+        <div id="main-container" class="container">
+            <section class="main-section" background-color="#11ABB0">
+                <h1>About me </h1><img src="assets/images/angelitope.jpg" class="auth-image" alt="Your Name">
+                <p> I'm a full stack web developer with experienced in custom website, Mobile Apps, Framework,
+                    API's and modern responsive web design for web and Mobile. I solve problems and fix bugs without
+                    giving up. I believe every clear/define problem must have a corresponding solution.</p>
+
+                <p> I am most experienced with HTML, CSS, JavaScript, Node, Ajax, Jquery, and several other
+                    available resources that make me feel confident writing code. I've spent my life refining skills
+                    for
+                    solving problems but now I have finally found a field where I am passionate about using them.
+                </p>
+            </section>
         </div>
-    </footer>
+    </section>
+
+    <section id="portfolio">
+
+        <div id="main-container" class="container">
+            <section class="main-section">
+                <h1>Portfolio</h1>
+
+                <div class="work">
+                    <img src="assets/images/psychic.jpg" alt="Word Guess">
+
+                    <h3>Psychic Game</h3>
+                </div>
+                <div class="work">
+                    <img src="assets/images/train.jpg" alt="RPG Game">
+
+                    <h3>Train Scheduler</h3>
+                </div>
+                <div class="work">
+                    <img src="assets/images/pcuisine.jpg" alt="Trivia Game">
+
+                    <h3>Peruvian Cusine</h3>
+                </div>
+                <div class="work">
+                    <img src="assets/images/triviag.jpg" alt="Rutgers Info Widget">
+
+                    <h3>Trivia Game</h3>
+                </div>
+                <div class="work">
+                    <img src="assets/images/showmearound.jpg" alt="Rock Paper Scissors">
+
+                    <h3>ShowMeAround</h3>
+                </div>
+
+            </section>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <div id="main-container" class="container">
+            <section class="main-section">
+                <h1>Contact</h1>
+
+                <form id="contact-form">
+                    <ul>
+                        <li>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="your name" required="required">
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="example@gmail.com"
+                                required="required">
+                        </li>
+                        <li>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required="required"></textarea>
+                        </li>
+                    </ul>
+                    <input type="submit">
+                </form>
+
+            </section>
+
+        </div>
+    </section>
+
+    <p class="scrollup">
+        <a href="#top" id="bottom"><i class="fa fa-angle-double-down"></i>
+        </a>
+    </p>
+    <div class="header-overlay"></div>
+    <div class="social-container">
+        <footer>
+            <div class="container" alignment="center">Angel Cochachez Copyright 2019 &copy;
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="assets/javascript/topnav.js"></script>
+    <script type="text/javascript" src="assets/javascript/scrollD.js"></script>
 </body>
 
 </html>
