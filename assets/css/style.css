@@ -142,10 +142,6 @@ body {
     }*/
 
 
-p {
-    /*background-color: olivedrab;*/
-}
-}
 
 
 h1,
@@ -190,15 +186,15 @@ h3 {
     color: #ffffff;
     background: #ffffff;
     border-bottom: 2px solid #cccccc;
-}
+} */
 nav {
-    /*border: 1px solid #ccc;*/
-border-width: 1px 0;
-list-style: none;
-margin: 0;
-padding: 0;
-text-align: center;
-/*margin-top: 25px;*/
+    /* border: 1px solid #ccc; */
+    border-width: 1px 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /*margin-top: 25px;*/
 }
 
 nav a {
@@ -549,11 +545,3 @@ footer .copyright li:first-child:before {
 }
 
 /******* Social Footer ***********/
-.inset li a img {
-
-    position: absolute;
-    float: right;
-    margin-right: 15px;
-    text-outline: 15px;
-
-}
